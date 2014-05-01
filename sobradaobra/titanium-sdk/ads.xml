@@ -1,0 +1,70 @@
+<Alloy>
+	<Collection src="ads" id="related" instance="true"/>
+	<Window class="windowInside">
+		<TitleControl>
+			<Label text="Anúncio" class="labelTitleInside"/>
+		</TitleControl>
+	    <ScrollView showHorizontalScrollIndicator="false">
+	    	<View class="container">
+	    		<ScrollableView id="gallery" showPagingControl="true" scrollingEnabled="true" overlayEnabled="true">
+	    			<!--<ImageView image="/images/photo-product.jpg"/>
+	    			<ImageView image="/images/photo-product.jpg"/>
+	    			<ImageView image="/images/photo-product.jpg"/>
+	    			<ImageView image="/images/photo-product.jpg"/>
+	    			<ImageView image="/images/photo-product.jpg"/>-->
+	    		</ScrollableView>
+	    		<View class="containers" id="containerTitle">
+	    			<Label id="title" class="labelTitle" text=""/>
+	    		</View>
+	    		<View class="containers">
+	    			<View class="left" id="containerPrice">
+	    				<Label id="price" text=""/>
+	    			</View>
+	    			
+	    			<View class="right" id="containerPhoto">
+	    				<ImageView image="/images/avatar.jpg" id="photo"/>
+	    				<Label id="author" text=""/>
+    				</View>
+	    		</View>
+	    		<View class="containers">
+	    			<View class="left">
+	    				<View class="blockFeatures">
+	    					<Label class="labelFeature" id="transaction" text=""/>
+    					</View>
+	    			</View>
+	    			<View class="right" id="actions">
+	    				<Button image="/images/icon-vcard-ads-chat.png" id="chat" class="authorIcons"/>
+	    				<Button image="/images/icon-vcard-ads-email.png" id="email" class="authorIcons"/>
+						<Button image="/images/icon-vcard-ads-telephone.png" id="telephone" class="authorIcons"/>
+    				</View>
+	    		</View>
+	    		<View class="containers">
+	    			<View class="left" id="features">
+	    				<View class="blockFeatures">
+	    					<Label class="labelFeature" id="condition" text=""/>
+    					</View>
+    					<View class="line"/>
+    					<View class="blockFeatures">
+	    					<Label class="labelFeature" id="location" text=""/>
+    					</View>
+	    			</View>
+	    			<View class="right" id="containerDescription">
+	    				<Label id="description" text="" class="labelFeature" />
+    				</View>
+	    		</View>
+	    		<View class="containers" id="footer">
+	    			<View class="right">
+	    				<Button image="/images/icon-complaint.png" id="complaint" />
+	    				<Button image="/images/icon-vcard-ads-like.png" id="like"/>
+    				</View>
+	    		</View>
+				<View class="otherProducts">
+					<Label text="Produtos semelhantes" class="titleOtherProducts" />
+				</View>
+				<TableView id="list" dataCollection="$.related">
+					<Require type="view" src="vcardAds"/>
+				</TableView>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

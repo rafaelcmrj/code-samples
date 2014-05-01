@@ -1,0 +1,41 @@
+<Alloy>
+	<Collection src="conversation" />
+	<Window class="windowInside">
+		<TitleControl>
+			<Label text="" class="labelTitleInside" id="name"/>
+		</TitleControl>
+		<ScrollView>
+			<View class="form">
+				<TextField id="message" hintText="Digite aqui sua mensagem..."/>
+				<Button title="Enviar" id="send"/>
+			</View>
+			<ScrollView showHorizontalScrollIndicator="false" id="scrollView">
+				<View class="container">
+					<!--<Button title="Carregar próximas..." id="next"/>-->
+					<TableView id="table" allowsSelection="false">
+						<TableViewRow>
+							<View class="margin"/>
+							<Button title="Carregar anteriores..." id="prev"/>
+						</TableViewRow>
+						<!--<TableViewRow id="{id}" visible="false">
+							<View class="containerPhoto">
+								<ImageView image="{photo}" class="photo"/>
+							</View>
+							<View class="containerInfos">
+								<View class="containerMessage">
+									<View class="margin"/>
+									<Label class="message" text="{message}"/>
+									<View class="margin"/>
+								</View>
+								<View class="containerTime">
+									<ImageView image="/images/icon-time.png" class="iconTime"/>
+									<Label text="{time}" class="time"/>
+								</View>
+							</View>
+					</TableViewRow>-->
+			        </TableView>
+				</View>
+			</ScrollView>
+		</ScrollView>
+	</Window>
+</Alloy>
