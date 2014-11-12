@@ -1,0 +1,23 @@
+{
+  "routes":
+  [
+    { "path": "/", "callback": "application#index" },
+    { "path": "/piechart", "callback": "application#piechart" }
+  ],
+  "filters":
+  [
+  	 { "path": "/", "callback": "" }
+  ],
+  "websockets":
+  [
+  	{ "event": "enterUser", "callback": "game#enterUser"},
+  	{ "event": "exitUser", "callback": "game#exitUser"},
+  	{ "event": "joinRoom", "callback": "game#joinRoom"},
+  	{ "event": "leaveRoom", "callback": "game#leaveRoom"},
+  	{ "event": "userReady", "callback": "game#userReady"},
+  	{ "event": "questionReady", "callback": "game#questionReady"},
+  	{ "event": "questionAnswered", "callback": "game#questionAnswered"},
+  	{ "event": "timerEnd", "callback": "game#timerEnd"},
+  	{ "event": "matchResult", "callback": "game#matchResult"}
+  ]
+}

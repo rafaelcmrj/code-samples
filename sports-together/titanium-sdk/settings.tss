@@ -1,0 +1,71 @@
+".inside": {
+	layout: 'vertical'
+},
+"ListView": {
+	top: 0
+},
+"ListView[platform=ios]": {
+	style: Titanium.UI.iPhone.ListViewStyle.GROUPED
+},
+"#listItemBasicInfo": {
+	height: 84
+},
+"#userImage": {
+	borderRadius: 32,
+	height: 64,
+	left: 10,
+	width: 64
+},
+"#labelName": {
+	top: 10
+},
+"#inputName": {
+	top: 10
+},
+"#labelEmail": {
+	top: 50
+},
+"#inputEmail": {
+	top: 50
+},
+".labelBasicInfo": {
+	left: 94
+},
+".inputBasicInfo": {
+	color: 'gray',
+	left: 155,
+	textAlign: 'right',
+	right: 15
+}
+"#separatorBasicInfo": {
+	backgroundColor: '#dedede',
+	height: 1,
+	left: 84,
+	top: 40,
+	width: Titanium.UI.FILL
+}
+".friendAvatar": {
+	borderRadius: 16,
+	height: 32,
+	left: 10,
+	width: 32
+},
+".friendName": {
+	left: 52
+},
+"Button": {
+	backgroundColor: 'white',
+	borderColor: '#dedede',
+	borderRadius: 4,
+	borderWidth: 1,
+	height: 40,
+	width: 260
+},
+"#save": {
+	color: 'green',
+	tintColor: 'green'
+},
+"#logout": {
+	color: 'red',
+	tintColor: 'red'
+}

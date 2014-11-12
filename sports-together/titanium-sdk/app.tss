@@ -1,0 +1,10 @@
+".container": {
+	backgroundColor: Alloy.Globals.constants.BASE_COLOR,
+	barColor: Alloy.Globals.constants.NAV_BAR_COLOR,
+	navTintColor: "white",
+	tabBarHidden: true,
+	translucent: false
+},
+".inside": {
+	backgroundColor: Alloy.Globals.constants.BACKGROUND_INSIDE_COLOR
+}

@@ -1,0 +1,66 @@
+<Alloy>
+	<TabGroup>
+		<Tab titleid="my_profile">
+			<Window class="container">
+				<TitleControl>
+					<Label textid="my_profile"/>
+				</TitleControl>
+				<ScrollView class="inside">
+					
+					<ListView defaultItemTemplate="Titanium.UI.LIST_ITEM_TEMPLATE_SETTINGS">
+						<Templates>
+							<ItemTemplate name="info">
+								<ImageView bindId="userImage" id="userImage" />
+								<Label text="Nome" id="labelName" class="labelBasicInfo" />
+								<TextField bindId="userName" id="inputName" class="inputBasicInfo" />
+								<View id="separatorBasicInfo" />
+								<Label text="Email" id="labelEmail" class="labelBasicInfo" />
+								<TextField bindId="userEmail" id="inputEmail" class="inputBasicInfo" />
+							</ItemTemplate>	
+							
+							<ItemTemplate name="friend">
+								<ImageView bindId="friendAvatar" class="friendAvatar" />
+								<Label bindId="friendName" class="friendName" />
+							</ItemTemplate>							
+						</Templates>
+						
+						<ListSection headerTitle="Basic Info">
+							<ListItem userImage:image="/images/userAvatar.jpg" userName:value="Rafael Costa" userEmail:value="rafaelcosta@afigueira.com.br" template="info" id="listItemBasicInfo" />
+						</ListSection>
+						
+						<ListSection headerTitle="More Info">
+							<ListItem title="Cidade" subtitle="Rio de Janeiro" accessoryType="Titanium.UI.LIST_ACCESSORY_TYPE_DISCLOSURE" />
+							<ListItem title="Sexo" subtitle="Homem" accessoryType="Titanium.UI.LIST_ACCESSORY_TYPE_DISCLOSURE" />
+							<ListItem title="Aniversário" subtitle="13 de Junho de 1983" accessoryType="Titanium.UI.LIST_ACCESSORY_TYPE_DISCLOSURE" />
+						</ListSection>
+						
+						<ListSection headerTitle="Friends">							
+							<ListItem friendName:text="Bob Benson" friendAvatar:image="/images/friendAvatar.jpg" template="friend" canEdit="true" />
+							<ListItem friendName:text="Bob Benson" friendAvatar:image="/images/friendAvatar.jpg" template="friend" canEdit="true" />
+							<ListItem friendName:text="Bob Benson" friendAvatar:image="/images/friendAvatar.jpg" template="friend" canEdit="true" />
+							<ListItem friendName:text="Bob Benson" friendAvatar:image="/images/friendAvatar.jpg" template="friend" canEdit="true" />
+						</ListSection>
+						
+						<ListSection>
+							<HeaderView>
+								<View>
+									<Button titleid="save" id="save" />
+								</View>
+							</HeaderView>
+						</ListSection>
+						
+						<ListSection>
+							<HeaderView>
+								<View>
+									<Button titleid="logout" id="logout" />
+								</View>
+							</HeaderView>
+						</ListSection>
+						
+					</ListView>
+					
+				</ScrollView>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>
