@@ -1,0 +1,22 @@
+{
+  "name": "renko-tradingview-twilio-bot",
+  "version": "1.0.0",
+  "description": "Integrate TradingView Email Alert with Poloniex for automated trading",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./tradingview-bot.ts"
+  },
+  "author": "Rafael Costa<rafaelcmrj@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^8.0.47",
+    "mail-listener2": "^0.3.1",
+    "node-telegram-bot-api": "^0.30.0",
+    "nodemon": "^1.12.1",
+    "plnx": "^0.1.2",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.1",
+    "typescript.events": "^7.9.0"
+  }
+}
